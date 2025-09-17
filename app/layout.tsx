@@ -25,7 +25,7 @@ export default function RootLayout({
           data-website-id="971a2872-ba13-4d79-9366-c40e5d0fcf36"
           data-api-key="971a2872-ba13-4d79-9366-c40e5d0fcf36"
           data-endpoint="https://ts.protoshare.app/api/track"
-          src="https://ts.protoshare.app/tracking/tracksource.js">
+          src="https://ts.protoshare.app/tracking/tracksource.debug.js">
         </script>
       </head>
       <body className={`${inter.className} h-min-screen`}>
