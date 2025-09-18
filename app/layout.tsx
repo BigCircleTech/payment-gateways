@@ -24,7 +24,7 @@ export default function RootLayout({
           defer
           data-website-id="971a2872-ba13-4d79-9366-c40e5d0fcf36"
           data-api-key="971a2872-ba13-4d79-9366-c40e5d0fcf36"
-          data-endpoint="https://ts.protoshare.app/api/track"
+          data-endpoint="https://api.ts.protoshare.app/api/track/events"
           src="https://ts.protoshare.app/tracking/tracksource.debug.js">
         </script>
       </head>
