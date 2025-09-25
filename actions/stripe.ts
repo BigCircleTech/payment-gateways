@@ -1,6 +1,7 @@
 "use server";
 import Stripe from "stripe";
 import products from "@/data/products.json";
+import { cookies } from "next/headers";
 
 export async function createCheckoutSession({
   productId,
@@ -27,11 +28,19 @@ export async function createCheckoutSession({
     }
 
     const stripe = new Stripe(apiKey);
+    const trs_session_id = cookies().get("trs_session_id")?.value || "";
+    const trs_visitor_id = cookies().get("trs_visitor_id")?.value || "";
 
+    console.log("trs_session_id", trs_session_id);
+    console.log("trs_visitor_id", trs_visitor_id);
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       success_url: `${process.env.NEXT_PUBLIC_BASE_URL}/payment?status=success`,
       cancel_url: `${process.env.NEXT_PUBLIC_BASE_URL}/payment?status=failed`,
+      metadata: {
+        trs_session_id: trs_session_id,
+        trs_visitor_id: trs_visitor_id,
+      },
       line_items: [
         {
           price_data: {
