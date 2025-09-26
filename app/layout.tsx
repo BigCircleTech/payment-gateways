@@ -21,14 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
-          src="https://ts.protoshare.app/tracking/tracksource.js"
-          data-api-key="sk_test_E8rDWFFUyzoDeIleydBXhLePGCXHCWVR"
-          data-website-id="84bfc96e-eb05-4301-889b-966e80af0dd1"
+          defer
+          data-website-id="68d624a869352082b2f92fe4"
           data-domain="test.tracksource.dev"
-          data-endpoint="https://api.ts.protoshare.app/api/track/events"
-          data-debug="false"
-          async
-          >
+          src="https://datafa.st/js/script.js">
         </script>
       </head>
       <body className={`${inter.className} h-min-screen`}>
