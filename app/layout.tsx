@@ -20,12 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          defer
-          data-website-id="68d624a869352082b2f92fe4"
-          data-domain="test.tracksource.dev"
-          src="https://datafa.st/js/script.js">
-        </script>
+      <script
+  defer
+  data-website-id="68d6170dedf652ddf163eaeb"
+  data-domain="test.tracksource.dev"
+  src="https://datafa.st/js/script.js">
+</script>
       </head>
       <body className={`${inter.className} h-min-screen`}>
         {children}
