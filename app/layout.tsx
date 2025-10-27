@@ -20,12 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          defer
-          data-website-id="68d6170dedf652ddf163eaeb"
-          data-domain="test.tracksource.dev"
-          src="https://datafa.st/js/script.js">
-        </script>
+      <script
+  src="https://ts.protoshare.app/tracking/tracksource.js"
+  data-website-id="168cc4bf-5499-47e6-9628-95ba1f66a006"
+  data-domain="source-track-stripe-test.vercel.app"
+  data-endpoint="https://api.ts.protoshare.app/api/track"
+  data-debug="true"
+  async>
+</script>
       </head>
       <body className={`${inter.className} h-min-screen`}>
         {children}
