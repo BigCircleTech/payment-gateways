@@ -22,10 +22,10 @@ export default function RootLayout({
       <head>
       <script
   src="https://ts.protoshare.app/tracking/tracksource.js"
-  data-website-id="168cc4bf-5499-47e6-9628-95ba1f66a006"
+  data-website-id="c462c7cf-8eb9-49c5-9ffa-6aed73c4cf31"
   data-domain="source-track-stripe-test.vercel.app"
   data-endpoint="https://api.ts.protoshare.app/api/track"
-  data-debug="true"
+  data-debug="false"
   async>
 </script>
       </head>
